@@ -1,0 +1,30 @@
+\begin{table}[htbp]
+\centering
+\small
+\begin{threeparttable}
+\caption{Price Coefficients Across Specifications}
+\label{tab:specs}
+\begin{tabular}{lccc}
+\hline \hline \noalign{\vskip 1mm}
+ & (1) & (2) & (3) \\ \hline \noalign{\vskip 1mm}
+Price & -1.120*** & -0.529*** & -0.438*** \\
+ & (0.053) & (0.099) & (0.099) \\
+Price $\times$ income Q1 &  &  & -0.661*** \\
+ &  &  & (0.059) \\
+Price $\times$ income Q2 &  &  & -0.285*** \\
+ &  &  & (0.038) \\
+Price $\times$ income Q3 &  &  & -0.093*** \\
+ &  &  & (0.026) \\
+\noalign{\vskip 1mm}
+Quarter fixed effects & No & Yes & Yes \\
+Log-likelihood & -94,722.8 & -94,617.4 & -94,359.3 \\
+Hold-out adoptions, predicted & 10,448 & 10,424 & 10,403 \\
+Hold-out adoptions, observed & \multicolumn{3}{c}{10,331} \\
+\noalign{\vskip 1mm} \hline
+\end{tabular}
+\begin{tablenotes}
+\footnotesize
+\item All specifications include the sector characteristics of Table \ref{tab:results} with size-specific coefficients; (1) also includes the electricity tariff. In (3) the price coefficient differs across quartiles of the share of households with per capita income above one minimum wage; ``Price'' is the coefficient of the richest quartile and the interactions are differences relative to it. Clustered standard errors in parentheses. The hold-out sample consists of the 14,877 sectors not used in estimation.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
